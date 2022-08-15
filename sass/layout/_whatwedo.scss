@@ -1,0 +1,40 @@
+.whatwedo-section {
+    padding-top: 0;
+}
+
+.whatwedo-card-list {
+    display: flex;
+    gap: 30px;
+}
+
+/*--Альтернативний gap для всіх браузерів--*/
+/*.whatwedo-card:not(:nth-child(3n)) {
+    margin-right: 30px;}
+.whatwedo-card:not(:nth-last-child(-n+3)) {
+    margin-bottom: 30px;}*/
+.whatwedo-card {
+    display: flex;
+    flex-basis: calc(100% - 60px/3)
+}
+
+
+.whatwedo-card-overlay {
+    position: relative;
+}
+
+.whatwedo-overlay {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    font-size: 14px;
+    font-weight: 700;
+    color: #FFFFFF;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: rgba(47, 48, 58, 0.8);
+    padding-top: 27px;
+    padding-bottom: 27px;
+}

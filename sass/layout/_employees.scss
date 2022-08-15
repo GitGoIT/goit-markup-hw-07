@@ -1,0 +1,76 @@
+.employee-section {
+    background: #F5F4FA;
+}
+
+.employee-name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    margin-bottom: 10px;
+}
+
+.employee-position {
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--secondary-text-colour);
+    margin-bottom: 16px;
+}
+
+.employee-card-list {
+    display: flex;
+    gap: 30px;
+}
+
+/*--Альтернативний gap для всіх браузерів--*/
+/*.employee-card:not(:nth-child(4n)) {
+    margin-right: 30px;}
+.employee-card:not(:nth-last-child(-n+4)) {
+    margin-bottom: 30px;}*/
+
+.employee-card {
+    flex-basis: calc(100% - 90px/4);
+}
+
+.employee-card-content {
+    background: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.employee-social-list {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.employee-social-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    transition: background-color var(--transition-dur-and-func);
+
+    &:hover,
+    &:focus {
+            background-color: var(--accent-color);}
+}
+
+
+
+.employee-social-icon {
+    fill: #AFB1B8;
+    transition: fill var(--transition-dur-and-func);
+
+.employee-social-link:hover &,
+.employee-social-link:focus & {
+        fill: #FFFFFF;}
+}
+
